@@ -1,45 +1,47 @@
-Ayurbot is an chatbot that delivers personalized Ayurvedic home remedies based on your body constitution (dosha). It uses a Retrieval-Augmented Generation (RAG) pipeline with traditional Ayurvedic texts to give holistic, dosha-specific solutions.
+# 🌿 Ayurbot: Personalized Ayurvedic Remedies with AI
 
-**---Features---**
+Ayurbot is an AI-powered chatbot that delivers **personalized Ayurvedic home remedies** based on your unique body constitution (*Dosha*). It uses a **Retrieval-Augmented Generation (RAG)** pipeline to extract knowledge from authentic Ayurvedic texts, combining the power of **ancient healing** with **modern NLP**.
 
-**Dosha Diagnosis**
+---
 
-Take a quick 5-question quiz to determine your Ayurvedic body type: Vata, Pitta, or Kapha.
-**Knowledge Base**
+## 🧠 Features
 
-Retrieves accurate information from three renowned Ayurvedic books:
+### 🔍 Dosha Diagnosis
+Take a quick, interactive **5-question quiz** to determine your Ayurvedic body type:  
+**Vata**, **Pitta**, or **Kapha**.
 
--->The Complete Book of Ayurvedic Home Remedies – Dr. Vasant Lad
+### 📚 Knowledge Base
+Ayurbot retrieves remedies from trusted Ayurvedic sources:
 
--->Charaka Samhita - Acharya Charaka,Acharya Dridhabala
+- *The Complete Book of Ayurvedic Home Remedies* – Dr. Vasant Lad  
+- *Charaka Samhita* – Acharya Charaka & Dridhabala  
+- *The Everyday Ayurveda Cookbook* – Kate O'Donnell, Cara Brostrom
 
--->The Everyday Ayurveda Cookbook –  Kate O'Donnell, Cara Brostrom
+### 🌿 Personalized Remedies
+Based on your dosha, Ayurbot offers **natural home remedies** and suggestions for diet, lifestyle, and balance.
 
-**Personalized Remedies**
+### 💬 Chat Interface
+A sleek, modern **chat UI** with a calming **black-green herbal theme**, designed for intuitive interaction.
 
-Provides natural home remedies tailored to your unique dosha for better health and balance.
+### ⚡ Fast & Accurate Search
+Uses **FAISS** for high-speed semantic retrieval across embedded Ayurvedic content.
 
-**Interactive Chat UI**
+---
 
-A clean,chat-style interface with a black and green theme for a modern herbal vibe.
+## 🛠️ Tech Stack
 
-**Fast & Accurate Retrieval**
+| Layer         | Tools Used                                                                 |
+|---------------|-----------------------------------------------------------------------------|
+| **Frontend**  | HTML, CSS *(custom black-green theme)*                                     |
+| **Backend**   | Flask (Python)                                                              |
+| **LLM**       | Mistral via Ollama                                                          |
+| **Embeddings**| `all-MiniLM-L6-v2` (Hugging Face)                                           |
+| **Vector DB** | FAISS (Facebook AI Similarity Search)                                       |
+| **PDF Parsing** | PyMuPDF                                                                   |
+| **Chunking**  | LangChain's `RecursiveCharacterTextSplitter`                                |
+| **Prompting & RAG** | LangChain `RetrievalQA` for dynamic answer generation                |
 
-Uses FAISS vector database for fast semantic search across all books.
-
-**Tech Stack**
-
-| Layer        | Tools Used                             |
-|--------------|----------------------------------------|
-| Frontend     | HTML, CSS (custom black-green theme)   |
-| Backend      | Flask (Python)                         |
-| LLM          | Mistral via Ollama                     |
-| Embeddings   | all-MiniLM-L6-v2(Hugging Face)         |
-| Vector DB    | FAISS                                  |
-| PDF Parsing  | PyMuPDF                                |
-| Chunking     | LangChain's RecursiveCharacterTextSplitter |
-| Prompting    | LangChain + RetrievalQA                |
-
+---
 **Screenshots**
 
 #Portfolio Page
